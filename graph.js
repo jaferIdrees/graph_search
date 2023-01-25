@@ -21,3 +21,8 @@ const addNode = (airport) => {
     adjacencyList.set(airport, []);
 }
 
+// Add edge, undirected
+function addEdge(origin, destination) {
+    adjacencyList.get(origin).push(destination)
+    adjacencyList.get(destination).push(origin)
+}
